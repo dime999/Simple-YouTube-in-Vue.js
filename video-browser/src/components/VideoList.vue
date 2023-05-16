@@ -1,13 +1,21 @@
 <template>
 <ul>
-    Video list:
+   <VideoListItem v-for="video in videos" v-bind:key="video.id" v-bind:video="video">
+   </VideoListItem>
 </ul>
 </template>
 
 <script>
+import VideoListItem from './VideoListItem.vue';
 export default{
     name: 'VideoList',
-    props: ['videos']
+    props: {
+        videos: Array
+    },
+    components:{
+        VideoListItem
+    }
+
 }
 </script>
 
