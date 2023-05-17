@@ -1,6 +1,6 @@
 <template>
-<div v-if="video">
-    <div class="embed-responsive embed-responsive-16by9">
+<div v-if="video" class="col-md-8">
+    <div style="height: 100%;" class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" :src="videoUrl"/>
     </div>
     <div class="details"> 
@@ -29,5 +29,9 @@ export default{
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
 }
 </style>
