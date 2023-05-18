@@ -44,8 +44,3 @@ export default{
          }
 };
 </script>
-<style>
-div{
-    background: fixed;
-}
-</style>
