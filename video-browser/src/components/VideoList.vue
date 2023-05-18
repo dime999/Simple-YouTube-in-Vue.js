@@ -25,4 +25,7 @@ export default {
 </script>
 
 <style>
+div{
+    background-color: black;
+}
 </style>
